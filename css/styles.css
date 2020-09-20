@@ -1,0 +1,311 @@
+* {margin: 0; padding: 0;box-sizing: border-box;}
+@font-face {
+    font-family: 'FontAwesome';
+    src:url(/font-awesome/fonts/fontawesome-webfont.ttf);
+}
+html {font-size:62.5%;color: #000;min-height: 100%}
+body {font-family:Arial;font-size: 1em;min-height: 100%}
+p {font-size: 1.5em;line-height: 1.8em;margin-bottom: 1.72em}
+
+h1 {}
+
+.required {color: red;font-weight: bolder;font-size: 24px;}
+#bodycontainer {background: #fff;padding: 0 10px;}
+a:hover, a:active, a:visited {color: blue;}
+.spacer {clear: both;}
+.spacer {clear: both;}
+#mainmenu {width: 25%;float: left;background: #123;bottom: 0;top: 0;height: 100%}
+#leftmenu {width: 100%;padding-bottom: 96px;min-height:100%;margin-top: 4.8em;}
+#mainmenu h2 {background: #4169e1;line-height: 4.8em;color: #fff;text-align: center;}
+#leftprofilecontainer {height: 6.5em;background: #111;}
+#leftprofilecontainer li {float: left;margin-right: 10px;border-right: 0px solid #fff;padding-right: 10px;font-weight: normal;}
+#leftprofilecontainer .profileimage  {float: left;line-height: 9.6em;padding: 24px 10px}
+#leftprofilecontainer .profileimage  img {width: 48px;height: 48px;border-radius: 50%;float: left;}
+#leftprofilecontainer .username {float: left;line-height: 1;border: 0px solid #333;line-height: 6.4em;font-size: 1.5em; font-weight: bold;color: #fff}
+#maincontent {background: #fff;width: 75%;bottom: 0;float: left;min-height: 100%}
+#maincontent:after {display:block;content:'';clear: both;}
+#maincontent #content {padding: 1.2em 2em;box-sizing: border-box;width: 100%;min-height: 100%}
+#maincontent #content:after {display:block;content:'';clear: both;}
+#maincontent #header {line-height: 4.8em;background: #4169e1;color: #fff;font-size: 1.5em;height: 4.8em}
+#maincontent #header::before, #maincontent #header::after {display: block;content: ''}
+#maincontent h2 {font-size:1.8em;line-height: 2;border: 1px solid #efefef;margin-bottom: 1.333333em;background: rgba(230,230,230,0.9);padding-left: 20px;border-radius: 5px;font-weight: normal;}
+#maincontent #innercontent {background: #fff;max-width: 90%;margin: 0 auto;background: #fefefe;padding: 2%;min-height: 100%}
+ul#profilenav {float: right;font-size: 1.0em;line-height: 4.8;list-style-type: none;font-weight: 600}
+ul#profilenav li {float: left;margin-right: 10px;padding-right: 10px;font-weight: normal;vertical-align: middle;}
+ul#profilenav li:last-child {padding-right: 0;border: none;}
+ul#profilenav li.profileimage  img {width: 24px;height: 24px;border-radius: 50%;border: 0px solid #fff;}
+#toggleMenu {cursor: pointer;width: 24px; height: 24px; border: 0px solid #dfdfdf;margin-top: 6px;box-sizing: border-box;position: relative;display: none;}
+#toggleMenu span {display: block;width: 24px;height: 2px;position: absolute;top: 11px;background: #fff;transition: .3s;margin-right: 5px;}
+#toggleMenu span:before {content: '';position: absolute; top: -8px; left: 0; width: 100%;height: 2px;background: #fff;transition: .3s;}
+#toggleMenu span:after {content: '';position: absolute; top: 8px; left: 0; width: 100%;height: 2px;background: #fff;transition: .3s;}
+#toggleMenu.toggle span{background: transparent;}
+#toggleMenu.toggle span:before {top: 0;transform: rotate(45deg);}
+#toggleMenu.toggle span:after {top: 0;transform: rotate(-45deg);}
+#passport img {width: 100px; height: auto;border: 1px solid rgba(230,230,230,0.9);padding: 5px;margin-top: 12px;}
+.row {width: 100%;font-size: 1.4em;line-height: 1.8em;display: table;}
+.row + .row {margin-bottom: 12px;}
+.row, .column {box-sizing: border-box;}
+.label {font-weight: bold;}
+.row:after {clear: both;}
+.col {float: left;width: 50%;}
+.column {position: relative;float: left;display: table-cell;}
+.column + .column {}
+.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12 {box-sizing: border-box;margin-right: 1.5%;}
+.column-1 {width: 6.86666666667%;}    
+.column-2 {width: 15.3333333333%;}
+.column-3 {width: 23.8%;}    
+.column-4 {width: 32.2666666667%;}
+.column-5 {width: 40.7333333333%;}
+.column-6 {width: 49.2%;}
+.column-7 {width: 57.6666666667%;}
+.column-8 {width: 66.1333333333%;}
+.column-9 {width: 74.6%;}
+.column-10 {width: 83.0666666667%;}
+.column-11 {width: 91.5333333333%;}
+.column-12 {width: 100%;}
+
+#header {line-height: 9.6em;background-color: #002366;padding-left: 20px;}
+#header h1 {color: #fff;}
+#topbackground img {width: 100%;}
+#topbackground {max-height: 250px;overflow-y: hidden;}
+#footer{line-height: 7.2em;background-color: #000000;padding-left: 20px;color: #fff;}
+#leftnavigation {margin: 24px 10px;border: 0px solid #fff;height: auto;}
+#leftnavigation ul {color: #fff;font-size: 1.4em;list-style: none;line-height: 2.4em;}
+#leftnavigation ul li {border-bottom: 1px solid #060d13;padding-left: 30px}
+#leftnavigation ul li a {text-decoration: none;color: #fff;position: relative;display: block;font-weight:400;outline:none;}
+#leftnavigation ul li a.dashboard::before, #leftnavigation ul li a.clients::before, #leftnavigation ul li a.genealogy::before, #leftnavigation ul li a.payment::before, #leftnavigation ul li a.message::before, #leftnavigation ul li a.usersonline::before, #leftnavigation ul li a.logout::before, #leftnavigation ul li a.network::before, #leftnavigation ul li a.ewallet::before, #leftnavigation ul li a.epin::before, #leftnavigation ul li a.profile::before, #leftnavigation ul li a.members::before,#leftnavigation ul li a.users::before, #leftnavigation ul li a.addnewmember::before, #leftnavigation ul li a.referral::before, #leftnavigation ul li a.bonus::before, #leftnavigation ul li a.reports::before , #leftnavigation ul li a.promotion::before, #leftnavigation ul li a.database::before{font-family: icofont;position: absolute;left: -25px;top:-0px;font-size: 1.2em;font-weight: normal;}
+#leftnavigation ul li a.dashboard::before {content: '\f0d9';}
+#leftnavigation ul li a.clients::before {content: '\ed6b';}
+#leftnavigation ul li a.genealogy::before {content: '\ea74';}  
+#leftnavigation ul li a.payment::before {content: '\ea7d';} 
+#leftnavigation ul li a.ewallet::before {content: '\edae';}
+#leftnavigation ul li a.epin::before {content: '\edb0';}
+#leftnavigation ul li a.message::before {content: '\ed45';} 
+#leftnavigation ul li a.members::before {content: '\ede3';} 
+#leftnavigation ul li a.usersonline::before {content: '\ed6c';} 
+#leftnavigation ul li a.logout::before {content: '\f054';}    
+#leftnavigation ul li a.network::before {content: '\ea74';}      
+#leftnavigation ul li a.profile::before {content: '\edd8';}
+#leftnavigation ul li a.users::before {content: '\edcb';}
+#leftnavigation ul li a.addnewmember::before {content: '\f0a5';}
+#leftnavigation ul li a.referral::before {content: '\efc3';}
+#leftnavigation ul li a.bonus::before {content: '\e904';}
+#leftnavigation ul li a.reports::before {content: '\f0ed';}
+#leftnavigation ul li a.promotion::before {content: '\eef1';}
+#leftnavigation ul li a.database::before {content: '\efd5';}
+
+
+.linkbutton {display: block;margin-top: 24px;}
+.linkbutton ul {list-style-type: none;}
+.linkbutton ul li {display: inline-block;margin-right: 20px;box-sizing: border-box;}
+.linkbutton a {color: #fff; background: #7fcad0;text-decoration: none;padding: 10px 10px;font-size: 1.3em;font-weight: bold;border-radius: 5px;}
+.linkbutton a:hover {background: #6ab8be;}
+
+/*#accordion div {position: relative;}
+#accordion div::before {content: '\f0a3';position: absolute;right: 0%;font-family: icofont;}
+#accordion div.active::before {content: '\f072';position: absolute;right: 0%;font-family: icofont;}*/
+#leftnavigation ul ul {line-height:30px;font-size:0.93333em;display:none;}
+#leftnavigation ul ul li {padding-left:0;border-bottom:none;}
+#leftnavigation ul ul li a {text-decoration: none;color: #fff;position: relative;display: block;font-weight:normal;outline:none;}
+.registrationform {max-width: 960px;/*background: rgba(0,0,0,0.5);*/ color: #333;margin: 20px auto;/*top: 50%;left: 50%;position: absolute;transform: translate(-50%,-50%);*/border-radius: 0 0 5px 5px;padding: 00px 00px 10px;margin-top: 40px;border: 1px solid #ccc;}
+.registrationform:before, .registrationform:after {display: block;content: ' ';}
+.registrationform:after {clear: both;}
+.registrationform .control {float: left;width: 50%;padding: 0 1%;}
+.registrationform .double {width: 100%;padding: 0 1%;float: none;}
+.registrationform .control input, .registrationform .control select,.registrationform .control textarea {width: 100%;padding: 4px;}
+.registrationform .control textarea {font-size: 1.5em;}
+.registrationform .control-group {width: 100%;}
+.registrationform .control-group:before, .registrationform .control-group:after {display: block;content: ' ';}
+.registrationform .control-group:after {clear: both;}
+.registrationform h2 {margin: 0;color: #333; text-align: center;background: #002366; color: #fff; line-height: 2em;font-size: 1.8;}
+.registrationform p {margin: 0;padding:0; font-weight: bold; color: #333;font-size: 1.4em;margin-top:1.2em;}
+.registrationform h1.sectionhead {font-weight: normal;text-align: left;line-height: 2;background-color: purple;font-size: 1.5em;padding-left: 10px;margin-top: 12px;color: #fff;}
+.registrationform h1.sectionhead::first-child {margin-top: 0}
+.registrationform input[type='submit'] {border: none; outline: none; line-height: 48px; color: #fff; font-size: 16px; background: #002366;cursor: pointer;padding: 0 0px;margin-top: 12px;float: none;margin-bottom: 24px;margin-left: 0px;width: 100%;border-radius: 5px;}
+.registrationform input[type="submit"]:hover {background: #002366;color: #fff;}
+/*.user {width: 80px;height: 80px;border-radius: 50%; overflow: hidden; position: absolute;top: calc(-80px/2); left: calc(50% - 40px);}
+.registrationform h2 {margin: 0; padding: 0 0 30px;color: #333; text-align: center;}
+.registrationform p {margin: 0;padding:0; font-weight: bold; color: #333;font-size: 1.4em}
+.registrationform input {width: 100%; margin-bottom: 20px;background: transparent;}
+.registrationform input[type='text'], input[type="password"] {border: none; border-bottom: 1px solid #fff; background: transparent; outline: none; height: 40px; color: #fff; font-size: 16px;}
+::placeholder {color: rgba(255,255,255,0.5);}
+.registrationform input[type='submit'] {border: none; outline: none; height: 40px; color: #fff; font-size: 16px; background: #ff267e;cursor: pointer;border-radius: 20px;}
+.registrationform input[type="submit"]:hover {background: #efed40;color: #262626;}
+.registrationform a {color: #fff; font-size: 1.0em;font-weight: normal; text-decoration: none;}*/
+/*dashboard css*/
+* {box-sizing: border-box;}
+section.dashboard {width: 100%;padding: 1rem 0;}
+section.dashboard::before, section.dashboard::after {content: '';display: block;}
+section.dashboard::after {clear: both;}
+figure {width: calc(100%/3);float: left;position: relative;margin-bottom: 1rem;height: 14.4em;text-align: center;color: #fff;}
+figure div.caption a {text-decoration: none;color: #fff;}
+figure div.item {margin-left:1rem;border: 0px solid #ddd;height: 100%;position: relative;border-radius: 0px 0x 0 0;}
+figure div.item > p {padding: 5% 0;font-size: 2.4em;font-weight: bold;margin-bottom: 20px;position: relative;bottom: 0%; top: 10%;}
+figure div.caption {position: absolute;bottom: 0;width: 100%;}
+figure div.caption p {text-align: center;width: 100%; margin-bottom: 0;padding: 5px 0;font-weight: normal;font-size: 1.3em}
+
+figure div.item::before {position: absolute; font-family: icofont;font-size: 4em;top: 45%;left: 40%;}
+
+figure div.item.orange::before {content: "\eaaf";color: #000;z-index: 0;color:#c27b0a;}
+figure div.item.concrete::before {content: "\ea7e";color: #000;z-index: 0;color:#465253;}
+figure div.item.greensea::before {content: "\ed45";color: #000;z-index: 0;color:#0f705d;}
+figure div.item.nightgale::before {content: "\ef77";color: #000;z-index: 0;color:#517394;}
+figure div.item.pomegranate::before {content: "\ed37";color: #000;z-index: 0;color:#3e130e;}
+figure div.item.purple::before {content: "\e925";color: #000;z-index: 0;color:#3e130e;}
+figure div.item.totalsales::before {content: "\ef77";z-index: 0;color:#186839;}
+
+figure div.item.balancebox::before {content: "\ea69";color: #000;z-index: 0;color:#e6412d;}
+figure div.item.referralbox::before {content: "\ea75";color: #000;z-index: 0;color:#21c0e0;}
+figure div.item.matrixbox::before {content: "\ea7f";color: #000;z-index: 0;color:#424242;}
+figure div.item.stepoutbox::before {content: "\ea78";color: #000;z-index: 0;color:#15aa66;}
+figure div.item.debitbox::before {content: "\ea70";color: #000;z-index: 0;color:#ffc40e;}
+figure div.item.receivedbox::before {content: "\ea73";color: #000;z-index: 0;color:#603cba;}
+figure div.item.loginbox::before {content: "\ea6c";color: #000;z-index: 0;color:rgba(128,0,128);}
+
+
+figure div.item.registration::before {content: "\ea7d";color: #000;z-index: 0;color:#e67e22;}
+figure div.item.welcomebonus::before {content: "\ea76";color: #000;z-index: 0;color:#e74c3c;}
+figure div.item.referralbonus::before {content: "\efc3";color: #000;z-index: 0;color:#265797;}
+figure div.item.companyprofit::before {content: "\efe3";color: #000;z-index: 0;color:#95a5ab;}
+figure div.item.stepoutbonus::before {content: "\ea78";color: #000;z-index: 0;color:#27ae60;}
+figure div.item.matrixbonus::before {content: "\ea7f";color: #000;z-index: 0;color:#298069;}
+figure div.item.messagestickets::before {content: "\ed45";color: #000;z-index: 0;color:#965966;}
+figure div.item.withdrawalrequest::before {content: "\ed9f";color: #000;z-index: 0;color:#2c3e50;}
+figure div.item.unusedepins::before {content: "\ed37";color: #000;z-index: 0;color:#f1c40f;}
+figure div.item.promowinners::before {content: "\eb8e";color: #000;z-index: 0;color: #1d1d1d;}
+figure div.item.totalmembers::before {content: "\ea7e";color: #000;z-index: 0;color:teal;}
+figure div.item.referralbonus::before {content: "\efc3";color: #000;z-index: 0;color:#265797;}
+figure div.item.totalsales::before {content: "\ea70";color: #000;z-index: 0;color:#0f705d;}
+
+
+.registration {background: #f39c12;}
+.registration .caption {background: #e67e22}
+.welcomebonus {background: rgba(231,76,60,0.4);}
+.welcomebonus .caption {background: #e74c3c}
+.referralbonus {background: rgba(38, 87, 151,0.75);}
+.referralbonus .caption {background: #265797}
+.companyprofit {background: #bdc3c7;}
+.companyprofit .caption {background: #95a5ab}
+.stepoutbonus {background: #2ecc71;}
+.stepoutbonus .caption {background: #27ae60}
+.matrixbonus .caption {background: #298069}
+.matrixbonus {background: #3498db;}
+.messagestickets {background: rgba(155, 89, 102,0.75);}
+.messagestickets .caption {background: #9b5966}
+.withdrawalrequest {background: rgba(52, 73, 94,0.75);}
+.withdrawalrequest .caption {background: #2c3e50}
+.totalsales {background: #16a085;}
+.totalsales .caption {background: #0f705d}
+/*.totalsales {background: rgba(52, 73, 94,0.75);}
+.totalsales .caption {background: #2c3e50}*/
+
+.unusedepins {background: rgba(241, 196, 15,.4)}
+.unusedepins .caption {background: #f1c40f}
+.totalmembers {background: rgba(0, 128, 128,.7)}
+.totalmembers .caption {background: teal}
+.promowinners {background: rgba(29,29,29,0.6);}
+.promowinners .caption {background: #1d1d1d}
+
+/*color scheme*/
+.orange {background: #f39c12;}
+.orange .caption {background: #c27b0a}
+.emerland {background: #2ecc71;}
+.emerland .caption {background: #186839}
+.pumpkin {background: #d35400;}
+.pumpkin .caption {background: #662900}
+.concrete {background: #95a5a6;}
+.concrete .caption {background: #465253}
+.cloud {background: #95a5a6;}
+.cloud .caption {background: #465253}
+.pomegranate {background: #c0392b;}
+.pomegranate .caption {background: #3e130e}
+.nightgale {background: #2c3e50;}
+.nightgale .caption {background: #517394}
+.greensea {background: #16a085;}
+.greensea .caption {background: #0f705d}
+.purple {background: purple;}
+.purple .caption {background: #662900}
+
+.balancebox {background: rgba(230,65,45,0.7);}
+.balancebox .caption {background: #e6412d;}
+.referralbox {background: rgba(33,192,224,0.7);}
+.referralbox .caption {background: #21c0e0}
+.matrixbox {background: rgba(66,66,66,0.7);}
+.matrixbox .caption {background: #424242}
+.stepoutbox {background:rgba(21,170,102,0.7);}
+.stepoutbox .caption {background: #15aa66}
+.debitbox {background: rgba(255,196,14,0.7);}
+.debitbox .caption {background: #ffc40e}
+.receivedbox {background: rgba(96,60,186,0.7);}
+.receivedbox .caption {background: #603cba}
+.loginbox {background: rgba(128,0,128,0.7);}
+.loginbox .caption {background: rgb(128,0,128);}
+.loginbox a {color: #fff;text-decoration: none;}
+
+.errors {font-weight: normal;font-size: 0.85em;margin-left: 5px;color: red;}
+
+.tree ul {padding-top: 20px; position: relative;transition: all 0.5s;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;}
+
+.tree li {float: left; text-align: center;list-style-type: none;position: relative; padding: 20px 5px 0 5px; transition: all 0.5s; -webkit-transition: all 0.5s;-moz-transition: all 0.5s;}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{content: ''; position: absolute; top: 0; right: 50%; border-top: 1px solid #000;width: 50%; height: 20px;}
+.tree li::after{right: auto; left: 50%;border-left: 1px solid #000;}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {display: none;}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{border: 0 none;}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{border-right: 1px solid #000;border-radius: 0 5px 0 0;-webkit-border-radius: 0 5px 0 0;-moz-border-radius: 0 5px 0 0;}
+.tree li:first-child::after{border-radius: 5px 0 0 0;-webkit-border-radius: 5px 0 0 0;-moz-border-radius: 5px 0 0 0;}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{content: '';position: absolute; top: 0; left: 50%;border-left: 1px solid #ccc; width: 0; height: 20px;}
+
+.tree li a{border: 1px solid #999;padding: 5px 10px;text-decoration: none;color: #000; font-family: arial, verdana, tahoma;font-size: 11px;
+    display: inline-block;border-radius: 5px; -webkit-border-radius: 5px;-moz-border-radius: 5px;transition: all 0.5s; -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s; }
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {background: #c8e4f8; color: #000; border: 1px solid #94a0b4;}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{border-color:  #94a0b4;}
+p.formdata {border: 1px solid #ccc;padding: 3px;font-weight: normal;margin-top: 0.5em;}
+
+table {}
+.jOrgChart {width: 768px;overflow: scroll;}
+.jOrgChart .node {color: #fff; font-weight: bold;background: royalblue;}
+.jOrgChart .node a {color: #fff; font-weight: normal; text-decoration: none;margin-top: 24px;}
+
+#passport {width: 160px; margin: 12px auto 0;border: 1px solid #eee;height: 160px;text-align: center;border-radius: 80px;overflow: hidden;}
+#passport .passportinner {width: 165px; height: 165px; border: 1px solid #eee;}
+@media screen and (max-width: 480px){
+   .registrationform .control {float: left;width: 100%;padding: 0 1%;float: none;} 
+    figure {width: calc(100%/2);}
+    figure div.caption p {text-align: center;width: 100%; margin-bottom: 0;padding: 5px 0;font-weight: normal;font-size: 1em;}    
+}
+
+@media screen and (max-width: 767px){
+    #toggleMenu {display: block;}
+    #mainmenu {width: 250px; position: fixed;left: -250px;overflow-y: scroll;}
+    #maincontent {width:100%;float:none;position: relative;min-height: 100%;z-index: 99999;}  
+    #maincontent #innercontent {padding: 1%; min-height: 100%}
+    .column {width: 50%;}
+    .col {width: 100%;}
+   .column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12 {width: 50%;float: left;}
+}
+
+
+
